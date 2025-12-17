@@ -14,6 +14,7 @@ internal class Program
         Console.WriteLine("\nDo you want to run 'A' or 'B'?");
         char inputPart = char.ToUpper(Console.ReadKey().KeyChar);
 
+        var watch = System.Diagnostics.Stopwatch.StartNew();
         string result;
         string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day{inputDay}", $"Input{inputPart}.txt");
 
@@ -29,8 +30,11 @@ internal class Program
         {
             throw new ArgumentException($"{inputPart} is an invalid input.");
         }
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
 
         Console.WriteLine($"\n\nResult of day {day} is: \n{result}");
+        Console.WriteLine($"Compute time: {elapsedMs} ms.");
     }
     private static IDay getDay(int day)
     {
