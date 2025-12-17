@@ -4,23 +4,23 @@ using NUnit.Framework;
 
 namespace Examples
 {
-    public class Day1Test
+    public class Day2Test
     {
         IDay day;
 
         [SetUp]
         public void Setup()
         {
-            day = new Day1();
+            day = new Day2();
         }
 
         [Test]
         public void ExampleA()
         {
-            string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day1", $"ExampleA.txt");
+            string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day2", $"ExampleA.txt");
 
             string answerA = day.AnswerA(pathInput);
-            string expectedAnswerA = "3";
+            string expectedAnswerA = "1227775554";
 
             Assert.That(answerA, Is.EqualTo(expectedAnswerA));
         }
@@ -28,10 +28,10 @@ namespace Examples
         [Test]
         public void ExampleB()
         {
-            string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day1", $"ExampleB.txt");
+            string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day2", $"ExampleB.txt");
 
             string answerB = day.AnswerB(pathInput);
-            string expectedAnswerB = "6";
+            string expectedAnswerB = "4174379265";
 
             Assert.That(answerB, Is.EqualTo(expectedAnswerB));
         }

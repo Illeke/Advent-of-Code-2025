@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -28,15 +28,17 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<None Update="Inputs\Day1\ExampleB.txt">
+		<None Update="Inputs\Day1\ExampleA.txt">
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		<None Update="Inputs\Day1\ExampleA.txt">
+		<None Update="Inputs\Day1\ExampleB.txt">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		<None Update="Inputs\Day1\ExampleB.txt">
+		<None Update="Inputs\Day2\ExampleB.txt">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Inputs\Day2\ExampleA.txt">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
-
 </Project>

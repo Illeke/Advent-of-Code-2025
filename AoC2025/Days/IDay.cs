@@ -8,7 +8,7 @@ namespace Days
 {
     public interface IDay
     {
-        int AnswerA(string pathInput);
-        int AnswerB(string pathInput);
+        string AnswerA(string pathInput);
+        string AnswerB(string pathInput);
     }
 }

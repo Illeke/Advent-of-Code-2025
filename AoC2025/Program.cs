@@ -14,7 +14,7 @@ internal class Program
         Console.WriteLine("\nDo you want to run 'A' or 'B'?");
         char inputPart = char.ToUpper(Console.ReadKey().KeyChar);
 
-        int result;
+        string result;
         string pathInput = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Inputs", $"Day{inputDay}", $"Input{inputPart}.txt");
 
         if (inputPart == 'A')
@@ -38,6 +38,8 @@ internal class Program
         {
             case 1:
                 return new Day1();
+            case 2:
+                return new Day2();
             default:
                 throw new ArgumentException($"{day} is an invalid value for day.");
         }

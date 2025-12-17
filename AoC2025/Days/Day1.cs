@@ -9,7 +9,7 @@ namespace Days
 {
     public class Day1 : IDay
     {
-        int IDay.AnswerA(string pathInput)
+        string IDay.AnswerA(string pathInput)
         {
             int dialPointer = 50;
             int passwordCounter = 0;
@@ -35,10 +35,10 @@ namespace Days
 
                 if (dialPointer == 0) passwordCounter++;
             }
-            return passwordCounter;
+            return passwordCounter.ToString();
         }
 
-        int IDay.AnswerB(string pathInput)
+        string IDay.AnswerB(string pathInput)
         {
             int dialPointer = 50;
             int passwordCounter = 0;
@@ -70,7 +70,7 @@ namespace Days
                     throw new ArgumentException();
                 }
             }
-            return passwordCounter;
+            return passwordCounter.ToString();
         }
 
         int mod(int x, int m)
