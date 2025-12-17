@@ -44,6 +44,8 @@ internal class Program
                 return new Day1();
             case 2:
                 return new Day2();
+            case 6:
+                return new Day6();
             default:
                 throw new ArgumentException($"{day} is an invalid value for day.");
         }

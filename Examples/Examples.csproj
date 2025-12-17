@@ -37,7 +37,10 @@
 		<None Update="Inputs\Day2\ExampleB.txt">
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		<None Update="Inputs\Day2\ExampleA.txt">
+		<None Update="Inputs\Day2\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Inputs\Day6\*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
